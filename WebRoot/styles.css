@@ -1,0 +1,23 @@
+/* -------------------- Colors -------------------- */
+
+:root {
+    --window-glass: rgba(20, 20, 20, 0.8);
+    --window-glass-border: #333333;
+    --window-glass-border-lit: #555555;
+}
+
+/* -------------------- Top Level -------------------- */
+
+body {
+    background-color: #111;
+    color: #CCC;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-size: 4vh;
+    margin: 0;
+    padding: 0;
+}
+
+b, strong {
+    font-weight: 700;
+}
