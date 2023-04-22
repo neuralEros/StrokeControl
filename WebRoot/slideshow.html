@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+        position: relative;        
+        justify-content: center;
+    }
+
+    .leftDetailShell,
+    .rightDetailShell {
+        flex: 1;
+        overflow: hidden;
+        background-color: black;
+        z-index: -100;
+    }
+
+    .slideImageWrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    
+    .leftDetailShell img,
+    .rightDetailShell img {
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        object-fit: cover;
+        opacity: 0.2;
+        transform: translate(-50%, -50%);
+        filter: blur(1.2rem) contrast(80%);
+    }
+
+    .leftDetailShell img {
+        top: 30%;
+        left: 50%;
+    }
+
+    .rightDetailShell img {
+        top: 70%;
+        left: 50%;
+    }
+    
+    .contentShell {
+        overflow: hidden;
+        background-color: black;
+        display: flex;
+        justify-content: center; /* to center horizontally */
+        align-items: center; /* to center vertically */
+    }
+
+    .contentShell img {
+        width: auto;
+        height: 100%;
+    }
+
+    .corner {
+        position: absolute;
+        width: auto;
+        height: auto;
+        background-color: rgba(255, 0, 0, 0.5); /* 50% opacity red */
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        z-index: 100;
+        padding: 2vh;
+    }
+    
+    .topBar {
+        position: fixed;
+        top: 0;
+        width: 80%;
+        height: 0.7vh;
+        background-color: red;
+        z-index: 200;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+    }
+
+    .topLeft {
+        top: 0;
+        left: 0;
+    }
+
+    .topRight {
+        top: 0;
+        right: 0;
+    }
+
+    .bottomLeft {
+        bottom: 0;
+        left: 0;
+    }
+
+    .bottomRight {
+        bottom: 0;
+        right: 0;
+    }
+    
+    .square {
+        position: absolute;
+        top: 37vh;
+        left: 19vh;
+        width: 30vh;
+        height: 10vh;
+        background-color: rgba(0,0,0,0.6);
+        transform: rotate(4deg);
+        z-index: 9000;
+        opacity:1;
+        backdrop-filter: blur(1rem);
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="topBar"></div>
+      <div class="leftDetailShell"><div class="slideImageWrapper"><img src="bg.png" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';"></div></div>
+      <div class="contentShell"><div class="slideImageWrapper"><div class="square"></div><div class="square2"></div>
+        <img src="bg.png" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';"></div>
+        <div class="corner topLeft">TEST</div> <!-- add the four divs -->
+        <div class="corner topRight">TEST</div>
+        <div class="corner bottomLeft">TEST</div>
+        <div class="corner bottomRight">TEST</div>
+      </div>
+      <div class="rightDetailShell"><div class="slideImageWrapper"><img src="bg.png" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';"></div></div>
+    </div>
+  </body>
+</html>
+

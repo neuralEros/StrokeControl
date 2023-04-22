@@ -8,6 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.123" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.5" />
       <PackageReference Include="Nancy" Version="2.0.0" />
       <PackageReference Include="Nancy.Hosting.Self" Version="2.0.0" />
     </ItemGroup>
@@ -25,28 +27,38 @@
       <None Update="Licenses\License - StrokeControl.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-      <None Update="WebRoot\fonts.css">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
       <None Update="WebRoot\index.html">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
       <None Update="WebRoot\jquery.js">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-      <None Update="WebRoot\styles.css">
+      <None Update="WebRoot\Fonts\ns700.woff2">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-      <None Update="WebRoot\Fonts\nsb.woff2">
+      <None Update="WebRoot\Fonts\ns700i.woff2">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-      <None Update="WebRoot\Fonts\nsbi.woff2">
+      <None Update="WebRoot\Fonts\ns400.woff2">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-      <None Update="WebRoot\Fonts\nsr.woff2">
+      <None Update="WebRoot\Fonts\ns400i.woff2">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
-      <None Update="WebRoot\Fonts\nsri.woff2">
+      <None Update="WebRoot\Fonts\ns900.woff2">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="WebRoot\Fonts\ns900i.woff2">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Remove=".directory" />
+      <None Update="WebRoot\slideshow.html">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="WebRoot\Stylesheets\fonts.css">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="WebRoot\Stylesheets\styles.css">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
     </ItemGroup>
